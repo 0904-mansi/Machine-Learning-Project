@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Result
+</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+            background-image: url();
+            background-repeat: repeat-x;
+            background-position: top;
+            background-color: #FFFFFF;
+            width: 100%;
+            font-size: 12px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+        .MyTable
+        {
+            height: 82px;
+        }
+        
+        
+        .MyTable td, th
+        {
+            padding: 5px 5px 5px 5px;
+            border-top: 1px solid #cccccc;
+            border-right: 1px solid #cccccc;
+            text-align: left;
+            text-align: center;
+        }
+        
+        .Tbtext
+        {
+            font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333333;
+            text-decoration: none;
+            text-align: left;
+            line-height: 21px;
+            padding-left: 2px;
+        }
+        .TBStyle
+        {
+            font-size: 12px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            color: #000000;
+            text-decoration: none;
+            text-align: left;
+            border: #FFFFFF 0px solid;
+            width: auto;
+        }
+        .border
+        {
+            border: 1px solid #9A9A9A;
+            background-color: #FFFFFF;
+        }
+        .High
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 20PX;
+            border: 1px solid #9A9A9A;
+            background-color: #e9e9e9;
+        }
+        .lbl
+        {
+            text-align: left;
+            width: Auto;
+            height: Auto;
+        }
+        .style4
+        {
+            height: 98px;
+        }
+        
+        
+        .style5
+        {
+            width: 363px;
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" method="post" action="./ExamResultPrint_BIT.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F1FCBB3D" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div>
+    <div style="margin-top: 20px;">
+        <table align="center" cellspacing="0" cellpadding="0" border="0" width="800px">
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 150px;" rowspan="2" align="right">
+                    <img id="Image1" src="../Upload/Inst_Logo_bd2c3c5751c6402399ee32649482a484_1519840692881.png" style="height:120px;width:220px;border-width:0px;" />
+                </td>
+                <td style="text-align: center; margin-top: 50px;" class="style4">
+                    <span id="lblCompanyName" style="font-size: 22px; font-weight: bold;">Bhilai Institute of Technology, Durg</span>
+                    <br />
+                    <br />
+                    <span id="lblCompanyAddress" style="font-size: 16px; font-weight: bold;">STATEMENT OF MARKS AND GRADES</span>
+                    <br />
+                    <br />
+                    <span id="lblTitle" style="font-size: 16px; font-weight: bold;">Computer Science & Engineering Vth SEM Examination</span>
+                    <br />
+                    <span id="lblTitle02" style="font-size: 16px; font-weight: bold;">NOV-DEC 2022</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <table border="0" style="border-collapse: collapse; border-left: 1px solid #cccccc;
+                        border-bottom: 1px solid #cccccc;" cellpadding="0" cellspacing="0" width="100%"
+                        class="MyTable">
+                        <tr>
+                            <td align="center" colspan="4" style="font-weight: bold; font-size: 15px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                NAME OF THE CANDIDATE :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblname">MANSI MISHRA</span>
+                            </td>
+                            <td style="text-align: center; width: 150px;" rowspan="7" align="center">
+                                <img id="studentPhoto" src="../StudentPhoto/2001010012_Stu_92933f29fad54500a1e7e02be2dc079a_300102220048.jpg" style="height:101px;width:116px;border-width:0px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                FATHER'S/HUSBAND'S NAME :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblfname">BHARTENDU MISHRA</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                MOTHER'S NAME :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblmname">VANDANA MISHRA</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                ENROLLMENT NO. :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblEnrollNo">BK4122</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                ROLL NO. :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblRollNo">300102220048</span>
+                            </td>
+                        </tr>
+                        <tr style="display: none;">
+                            <td align="left" style="width: 25%; text-align: left;">
+                                COURSE :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblCourse">B.Tech.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                NAME OF THE PROGRAMME :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblBranch">B.Tech. (Computer Science & Engineering)</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                STATUS :
+                            </td>
+                            <td align="left" colspan="2" style="text-align: left;">
+                                <span id="lblSTATUS">REGULAR</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    &nbsp; &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; height: 5px;" colspan="2">
+                </td>
+            </tr>
+            <tr id="trCredit">
+	<td valign="top" colspan="2" style="border: 1px solid #cccccc;">
+                    <div>
+                        <div>
+		<table class="mGrid" cellspacing="0" rules="all" border="1" id="grdResultStudent" style="width:100%;border-collapse:collapse;">
+			<tr>
+				<th align="left" scope="col">Course Code</th><th align="left" scope="col">Course Name</th><th align="center" scope="col">ESE Max</th><th align="center" scope="col">ESE Obt.</th><th align="center" scope="col">CT Max</th><th align="center" scope="col">CT Obt.</th><th align="center" scope="col">TA Max</th><th align="center" scope="col">TA Obt.</th><th align="center" scope="col">Total Marks</th><th align="center" scope="col">Total Obt.</th><th align="center" scope="col">Letter Grade</th><th align="center" scope="col">Grade Point</th><th align="center" scope="col">Credit Earned</th>
+			</tr><tr>
+				<td align="left">102501CS</td><td align="left">Design and Analysis of Algorithms</td><td align="center">100</td><td align="center">87</td><td align="center">20</td><td align="center">20</td><td align="center">30</td><td align="center">27</td><td align="center">150</td><td align="center">134</td><td align="center">A+  </td><td align="center">10</td><td align="center">3</td>
+			</tr><tr>
+				<td align="left">102502CS</td><td align="left">Compiler Design</td><td align="center">100</td><td align="center">73</td><td align="center">20</td><td align="center">18</td><td align="center">30</td><td align="center">27</td><td align="center">150</td><td align="center">118</td><td align="center">A   </td><td align="center">9</td><td align="center">3</td>
+			</tr><tr>
+				<td align="left">102503CS</td><td align="left">Computer Networks</td><td align="center">100</td><td align="center">89</td><td align="center">20</td><td align="center">19</td><td align="center">30</td><td align="center">26</td><td align="center">150</td><td align="center">134</td><td align="center">A+  </td><td align="center">10</td><td align="center">3</td>
+			</tr><tr>
+				<td align="left">102504CS</td><td align="left">Software Engineering and Project Management</td><td align="center">100</td><td align="center">75</td><td align="center">20</td><td align="center">15</td><td align="center">30</td><td align="center">27</td><td align="center">150</td><td align="center">117</td><td align="center">A   </td><td align="center">9</td><td align="center">3</td>
+			</tr><tr>
+				<td align="left">102505CS</td><td align="left">Cryptography and Network Security</td><td align="center">100</td><td align="center">75</td><td align="center">20</td><td align="center">19</td><td align="center">30</td><td align="center">27</td><td align="center">150</td><td align="center">121</td><td align="center">A   </td><td align="center">9</td><td align="center">3</td>
+			</tr><tr>
+				<td align="left">102591CS</td><td align="left">Design and Analysis of Algorithms Lab</td><td align="center">25</td><td align="center">24</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">25</td><td align="center">50</td><td align="center">49</td><td align="center">A+  </td><td align="center">10</td><td align="center">1</td>
+			</tr><tr>
+				<td align="left">102592CS</td><td align="left">Web Development Lab</td><td align="center">25</td><td align="center">23</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">23</td><td align="center">50</td><td align="center">46</td><td align="center">A+  </td><td align="center">10</td><td align="center">1</td>
+			</tr><tr>
+				<td align="left">102593CS</td><td align="left">Computer Networks Lab</td><td align="center">25</td><td align="center">23</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">23</td><td align="center">50</td><td align="center">46</td><td align="center">A+  </td><td align="center">10</td><td align="center">1</td>
+			</tr><tr>
+				<td align="left">102594CS</td><td align="left">Minor Project - I</td><td align="center">25</td><td align="center">22</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">22</td><td align="center">50</td><td align="center">44</td><td align="center">A   </td><td align="center">9</td><td align="center">1</td>
+			</tr><tr>
+				<td align="left">102595CS</td><td align="left">Internship Assessment (Report &amp; Seminar)</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">23</td><td align="center">25</td><td align="center">23</td><td align="center">A+  </td><td align="center">10</td><td align="center">1</td>
+			</tr><tr>
+				<td align="left">100596HM</td><td align="left">Constitution of India</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">-</td><td align="center">25</td><td align="center">24</td><td align="center">25</td><td align="center">24</td><td align="center">A+  </td><td align="center">10</td><td align="center">0</td>
+			</tr><tr>
+				<td>&nbsp;</td><td align="center" style="font-weight:bold;">TOTAL </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td align="center" style="font-weight:bold;">1000</td><td align="center" style="font-weight:bold;">856</td><td>&nbsp;</td><td>&nbsp;</td><td align="center" style="font-weight:bold;">20</td>
+			</tr>
+		</table>
+	</div>
+                        
+                    </div>
+                </td>
+</tr>
+
+            
+            <tr>
+                <td style="text-align: left; height: 5px;" colspan="2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <table border="0" style="border-collapse: collapse; border-left: 1px solid #cccccc;
+                        border-bottom: 1px solid #cccccc;" cellpadding="0" cellspacing="0" width="100%"
+                        class="MyTable">
+                        <tr id="trTotal">
+	<td align="left" style="width: 25%; text-align: left;">
+                                TOTAL CREDITS :
+                            </td>
+	<td style="text-align: center;">
+                                <span id="lblTotCredit">20</span>
+                            </td>
+	<td style="text-align: left;">
+                                TOTAL EARNED CREDITS :
+                            </td>
+	<td style="text-align: center;">
+                                <span id="lblTotEarnedCredit">20</span>
+                            </td>
+	<td style="text-align: left;">
+                                TOTAL CREDIT POINTS
+                            </td>
+	<td style="text-align: center;">
+                                <span id="lblTotCreditPoints">190</span>
+                            </td>
+</tr>
+
+                        
+                        
+                        <tr>
+                            <td align="left" style="width: 25%; text-align: left;">
+                                RESULT :
+                            </td>
+                            <td align="left" colspan="5" style="text-align: left;">
+                                <span id="lblresult">PASS</span>
+                            </td>
+                        </tr>
+                        <tr id="trSGPA">
+	<td align="left" style="width: 25%; text-align: left;">
+                                SPI :
+                            </td>
+	<td align="left" colspan="5" style="text-align: left;">
+                                <span id="lblSGPA">9.50</span>
+                            </td>
+</tr>
+
+                        
+                        <tr id="trCGPA">
+	<td align="left" style="width: 25%; text-align: left;">
+                                CPI :
+                            </td>
+	<td align="left" colspan="5" style="text-align: left;">
+                                <span id="lblCGPA">9.59</span>
+                            </td>
+</tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr id="trSemDetails">
+	<td colspan="2" align="center">
+                    <table border="0" style="border-collapse: collapse; border-left: 1px solid #cccccc;
+                        border-bottom: 1px solid #cccccc;" cellpadding="0" cellspacing="0" width="100%"
+                        class="MyTable">
+                        <tr>
+                            <td colspan="7">
+                                SEMESTER/YEAR WISE DETAIL OF RESULTS
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" style="text-align: left;">
+                                Failed Subject Codes :
+                                <span id="lblUnclearSubject"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                SEMESTER/YEAR
+                            </td>
+                            <td style="text-align: center;">
+                                I
+                            </td>
+                            <td style="text-align: center;">
+                                II
+                            </td>
+                            <td style="text-align: center;">
+                                III
+                            </td>
+                            <td style="text-align: center;">
+                                IV
+                            </td>
+                            <td style="text-align: center;">
+                                V
+                            </td>
+                            <td style="text-align: center;">
+                                VI
+                            </td>
+                            <td style="text-align: center;">
+                                VII
+                            </td>
+                            <td style="text-align: center;">
+                                VIII
+                            </td>
+                        </tr>
+                        <tr id="trTotCredit">
+		<td style="text-align: center;">
+                                EARNED / TOTAL CREDITS
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite1">20</span>/<span id="lblTotalCredits1">20</span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite2">20</span>/<span id="lblTotalCredits2">20</span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite3">20</span>/<span id="lblTotalCredits3">20</span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite4">20</span>/<span id="lblTotalCredits4">20</span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite5">20</span>/<span id="lblTotalCredits5">20</span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite6"></span>/<span id="lblTotalCredits6"></span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite7"></span>/<span id="lblTotalCredits7"></span>
+                            </td>
+		<td style="text-align: center;">
+                                <span id="lblEarnCredite8"></span>/<span id="lblTotalCredits8"></span>
+                            </td>
+	</tr>
+	
+                        <tr>
+                            <td style="text-align: center;">
+                                SPI
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA1">9.90</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA2">9.65</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA3">9.25</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA4">9.85</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA5">9.50</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA6"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA7"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblSGPA8"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                ATTEMPT
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT1">1</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT2">1</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT3">1</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT4">1</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT5">1</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT6"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT7"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblATTEMPT8"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">
+                                RESULT
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT1">PASS                          </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT2">PASS                          </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT3">PASS                          </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT4">PASS                          </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT5">PASS                          </span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT6"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT7"></span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span id="lblRESULT8"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+</tr>
+
+            
+            
+            <tr id="trPromot">
+	<td style="text-align: left; height: 5px;" colspan="2">
+                    <span id="lblPromotMessage"></span>
+                </td>
+</tr>
+
+            <tr>
+                <td style="text-align: left; height: 15px;" colspan="2">
+                </td>
+            </tr>
+            <tr id="trNote">
+	<td style="text-align: left; height: 5px; font-weight: bold;" colspan="2">
+                    Note: -
+                    <br />
+                    1. This is a computer-generated document.
+                    <br />
+                    <br />
+                    
+                </td>
+</tr>
+
+            
+        </table>
+    </div>
+    </form>
+</body>
+</html>
